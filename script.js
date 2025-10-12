@@ -1,16 +1,19 @@
-let form = document.getElementById('form');
+const form = document.getElementById('form');
+const input = document.getElementById('input');
+const addItem = document.getElementById('add-item');
+
+
 let items = [];
 
+//adding tasks
+function addToDom(text) {
+    const li = document.createElement('li');
 
-//to store items in local storage
-function storeItem(item) {
-    items.push(item);
-    localStorage.setItem('item',JSON.stringify(items));
-};
-//to display items in the Dom
-function displayItems(todoInput) {
-    let todoItem = document.createElement('li');
-    todoItem.innerHTML = todoInput;
-    let todoList = document.querySelector('ul');
-    todoList.appendChild(todoItem);
+    const span = document.createElement('span'); // for text
+    span.textContent = text;
+
+    const btn = document.createElement('button'); // for deleting item
+    btn.textContent = "Delete";
+    btn.classList.add('delete-btn'); 
+
 }
