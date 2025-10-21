@@ -49,6 +49,7 @@ form{
     border-style: none;
     border-radius: 8px;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 ul{
@@ -64,3 +65,34 @@ h2{
     color:#b97f14;
 }
 
+li {
+    background-color: #ba8324;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    border-radius: 10px;
+    position: relative;
+    
+}
+
+li:hover{
+    background-color: rgb(211, 230, 99);
+}
+
+
+.delete-btn{
+    position: absolute;
+    right: 10px;
+    background-color: rgb(211, 230, 99);
+    color: #333;
+    border-radius: 5px;
+    border-bottom: #333;
+    padding: 4px 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.delete-btn:hover{
+    background-color: #ba8324;
+}
